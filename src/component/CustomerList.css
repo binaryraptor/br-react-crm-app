@@ -1,0 +1,33 @@
+/* CustomerList.css */
+
+.welcome-heading {
+  color: #333; /* Change color as desired */
+}
+
+.customer-list-heading {
+  color: #555; /* Change color as desired */
+}
+
+.customer-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customer-table th, .customer-table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-employee-button, .delete-button, .update-button, .logout-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff; /* Default blue color */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-employee-button:hover, .delete-button:hover, .update-button:hover, .logout-button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
