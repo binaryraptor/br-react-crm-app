@@ -1,15 +1,12 @@
-
-import './App.css';
-import './component/Signin.css'
-import './component/CustomerList.css'
+import React, { useState } from 'react';
 import SigninForm from './component/SigninForm';
 import CustomerList from './component/CustomerList';
-import { useState } from 'react';
+
 function App() {
   const [authenticatedUser, setAuthenticatedUser] = useState(null);
 
-  const handleSignIn = (user) => {
-    setAuthenticatedUser(user);
+  const handleSignIn = ({ role }) => {
+    setAuthenticatedUser({ role });
   };
 
   return (
@@ -22,4 +19,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
